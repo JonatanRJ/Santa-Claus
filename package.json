@@ -1,0 +1,20 @@
+{
+  "name": "santa",
+  "version": "1.0.0",
+  "description": "threads NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "Threads",
+    "Subprocess",
+    "Santa"
+  ],
+  "author": "Jonatan, Nahum, Moises",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.1.0"
+  }
+}
