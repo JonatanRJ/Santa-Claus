@@ -5,8 +5,8 @@
 }
 
 body{
-    background: rgb(253,94,83);
-    background: linear-gradient(0deg, rgba(253,94,83,1) 0%, rgba(249,252,251,1) 40%, rgba(176,234,205,1) 60%, rgba(33,191,115,1) 100%);
+    background: rgb(190,202,92);
+    background: radial-gradient(circle, rgba(190,202,92,1) 0%, rgba(239,141,50,1) 46%, rgba(204,86,30,1) 63%, rgba(170,43,29,1) 100%);
     height: 100vh;
     width: 100vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -40,8 +40,9 @@ button{
     margin-top: 20px;
     padding: 5px 10px;
     border-radius: 5px;  
-    border-color: #e44848;
-    color: #dd3636;
+    background-color: rgb(243, 175, 85);
+    border-color: #291302b7;
+    color: #110603d8;
     font-size: 20px;
 }
 
@@ -54,4 +55,13 @@ h2{
     text-align: center;
     padding: 10px;
     font-size: 40px;
+}
+
+.full{
+    width: 100%;
+}
+
+#action{
+    display:none;
+    margin: 0 auto;
 }
