@@ -1,23 +1,23 @@
-/* -- Declare local variables -- */
+/* -- Declaracion de la variables globales -- */
 let semaforo = 0
 
-/* -- Message on Santa thread -- */
+/* -- Mensaje de Santa con los hilos -- */
 process.on('message', async (obj) => {
-    //Change Santa semaphore
+    //Cambio del semaforo de Santa
     semaforo = 1
-    //Sent info tho do gifts
+    //Enviar informacion para hacer los regalos
     if(obj.action == "regalos"){
         process.send({message:semaforo, action:"regalos"})
     }
-    //Sent info to share gifts
+    //Enviar informacion para enviar los regalos
     else if(obj.action == "repartir"){
         process.send({message:semaforo,action:"repartir"})    
     }
-    //Change semaphore after 30 seconds
+    //Cambiar el semaforo cada 30 segundos
     setInterval(actualizar, 30000) 
 })
 
-/* -- Function to change semaphore -- */
+/* -- Funccion para cambiar el semaforo -- */
 function actualizar() {
     semaforo = 0
     process.send({message:semaforo,action:"dormir"})
