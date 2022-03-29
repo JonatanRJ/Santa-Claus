@@ -5,7 +5,7 @@ let duendes = 0
 process.on('message', (obj) => {
     //Sumar duende
     if(obj.message == 1){
-        //Duende menor a 3
+        //Cuando sean menos de 3 duendes
         if(duendes < 2){
             duendes++
             process.send({message:duendes})
